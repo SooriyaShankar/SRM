@@ -4,12 +4,9 @@ import React, { useState, useEffect } from "react";
 export default function Home()
 {
     useEffect(() => {
-        fetch("https://jokes-by-api-ninjas.p.rapidapi.com/v1/jokes", {
+        fetch("https://localhost:3000", {
           method: "GET",
-          headers: {
-            "X-RapidAPI-Key": "your-api-key",
-            "X-RapidAPI-Host": "jokes-by-api-ninjas.p.rapidapi.com",
-          },
+          
         })
           .then((response) => response.json())
           .then((data) => {
@@ -20,6 +17,7 @@ export default function Home()
       }, []);
     
     return(
-
+        <>
+        </>
     )
 }
